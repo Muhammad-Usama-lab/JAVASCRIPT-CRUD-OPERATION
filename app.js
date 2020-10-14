@@ -87,21 +87,30 @@ function deleleRecord(e) {
 }
 
 function updateRecord(e) {
-    updateBtn= e;
-    rowToUpdate = e.parentNode.parentNode;
-    console.log(e);
+    for(var i=0;i<3 ;i++){
+        if(document.getElementById(inputs[i]).value == ""){
+            updateBtn= e;
+            rowToUpdate = e.parentNode.parentNode;
+             console.log(e);
 
-    for (var i = 0; i < 3; i++) {
+                for (var i = 0; i < 3; i++) {
 
-        var value = e.parentNode.parentNode.childNodes[i].innerHTML;
-        document.getElementById(inputs[i]).value = value;
+                  var value = e.parentNode.parentNode.childNodes[i].innerHTML;
+                  document.getElementById(inputs[i]).value = value;
+                 }
+   
+            
+               var btn = document.getElementById('btn');
+    
+                    btn.innerHTML = "UPDATE";
+                     btn.removeAttribute('onclick');
+                     btn.setAttribute('onclick', 'UPDATE(this);');
+                      e.style.display="none";
+    }else{
+    alert('Please Let the first Update Complete');
+        break;
     }
-    var btn = document.getElementById('btn');
-    btn.innerHTML = "UPDATE";
-    btn.removeAttribute('onclick');
-    btn.setAttribute('onclick', 'UPDATE(this);');
-    e.style.display="none";
-
+}
 
 }
 
