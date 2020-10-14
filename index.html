@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="Heading">
+
+        <h2>
+            CRUD OPERATION USING <u>JAVASCRIPT</u>
+        </h2>
+    </div>
+
+    <div class="mainContent">
+
+        <table>
+            <tr>
+                <td>
+                    <label for="name">Name</label>
+                </td>
+                <td>
+                    <input type="text" id="name">
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label for="fatherName">Father Name</label>
+                </td>
+                <td>
+                    <input type="text" id="fatherName">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="class">Class</label>
+                </td>
+                <td>
+                    <input type="text" id="class">
+                </td>
+            </tr>
+
+
+        </table>
+        <div>
+            <button type="submit" onclick="submit()" id="btn">
+                Submit
+            </button>
+        </div>
+
+    </div>
+    <div class="mainContent">
+        <table id="tab">
+<tr>
+    <th>
+        NAME
+    </th>
+    <th>
+        FATHER NAME
+    </th>
+    <th>
+        CLASS
+    </th>
+</tr>
+        </table>
+
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

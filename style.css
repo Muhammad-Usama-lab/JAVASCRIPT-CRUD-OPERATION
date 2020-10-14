@@ -1,0 +1,86 @@
+body{
+    font-family: sans-serif;
+    
+}
+
+
+.Heading{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.mainContent{
+    margin: 5px;
+    width: 40%;
+    box-shadow: 0px 0px 10px gray;
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+    border-radius: 10px;
+    overflow-x: scroll;
+}
+.mainContent div{
+    flex-wrap: nowrap;
+    
+
+}
+#btn{
+
+    color: white;
+    background-color: royalblue;
+    padding: 7px 10px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+
+
+
+}
+
+th,td{
+    padding: 5px;
+    height: 100%;
+}
+
+
+
+tr{
+    font-size: 20px;
+    width: 50%;
+
+}
+
+.row{
+    width: 100%;
+    background-color: rgb(211, 216, 228);
+}
+input{
+    
+    width: 100%;
+    padding: 5px;
+    font-size: 20px;
+}
+
+
+/* Table Buttons  CSS*/
+
+
+
+.smallBtn{
+    margin: 5px;
+    color: rgb(245, 245, 245);
+    background-color: rgb(4, 26, 92);
+    padding: 4px 7px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+
+}
+.smallBtn:hover{
+
+background-color: rgb(15, 43, 129);
+}
